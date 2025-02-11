@@ -1,0 +1,36 @@
+{
+  "dateType": {
+    "outdoor": "Outdoor",
+    "indoor": "Indoor",
+    "adventure": "Adventure",
+    "cultural": "Cultural",
+    "relaxation": "Relaxation",
+    "exhibition": "Exhibition",
+    "music": "Music",
+    "creative": "Creative",
+    "entertainment": "Entertainment",
+    "sport": "Sport",
+    "nightlife": "Nightlife",
+    "nature": "Nature",
+    "shopping": "Shopping"
+  },
+  "cuisineType": {
+    "chinese": "Chinese",
+    "japanese": "Japanese",
+    "korean": "Korean",
+    "malaysian": "Malaysian",
+    "taiwanese": "Taiwanese",
+    "thai": "Thai",
+    "vietnamese": "Vietnamese",
+    "italian": "Italian",
+    "spanish": "Spanish",
+    "peruvian": "Peruvian",
+    "fastFood": "Fast Food",
+    "vegan": "Vegan",
+    "indian": "Indian",
+    "mexican": "Mexican",
+    "others": "Others",
+    "buffet": "Buffet",
+    "hotpot": "Hotpot"
+  }
+}

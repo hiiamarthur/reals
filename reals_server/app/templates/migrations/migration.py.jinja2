@@ -1,0 +1,76 @@
+"""{{ message }}
+
+Revision ID: {{ revision }}
+Revises: {{ down_revision }}
+Create Date: {{ timestamp }}
+"""
+from alembic import op
+import sqlalchemy as sa
+from sqlalchemy.dialects import postgresql
+
+revision = '{{ revision }}'
+down_revision = '{{ down_revision }}'
+branch_labels = None
+depends_on = None
+
+def upgrade() -> None:
+    {%- for table in changes.new_tables %}
+    # Create new table: {{ table }}
+    op.create_table('{{ table }}',
+        *[col for col in metadata.tables['{{ table }}'].columns]
+    )
+    {%- endfor %}
+
+    {%- for change in changes.altered_columns %}
+    # Alter column: {{ change.table }}.{{ change.column.name }}
+    {% if 'nullable' in change.changes %}
+    {% if change.changes.nullable.to == False %}
+    # Handle existing NULL values
+    op.execute("""
+        UPDATE {{ change.table }}
+        SET {{ change.column.name }} = '{{ change.column.server_default.arg }}'
+        WHERE {{ change.column.name }} IS NULL
+    """)
+    {% endif %}
+    op.alter_column('{{ change.table }}', '{{ change.column.name }}',
+        existing_type=sa.{{ change.old_column.type.__class__.__name__ }}(),
+        nullable={{ change.changes.nullable.to }})
+    {%- endif %}
+    
+    {% if 'type' in change.changes %}
+    # Create temporary column for type conversion
+    op.add_column('{{ change.table }}',
+        sa.Column('{{ change.column.name }}_new', {{ change.changes.type.to }})
+    )
+    
+    # Convert data
+    op.execute("""
+        UPDATE {{ change.table }}
+        SET {{ change.column.name }}_new = {{ change.column.name }}::{{ change.changes.type.to }}
+    """)
+    
+    # Drop old column and rename new
+    op.drop_column('{{ change.table }}', '{{ change.column.name }}')
+    op.alter_column('{{ change.table }}', '{{ change.column.name }}_new',
+        new_column_name='{{ change.column.name }}')
+    {%- endif %}
+    {%- endfor %}
+
+def downgrade() -> None:
+    {%- for table in changes.new_tables|reverse %}
+    op.drop_table('{{ table }}')
+    {%- endfor %}
+
+    {%- for change in changes.altered_columns|reverse %}
+    {% if 'nullable' in change.changes %}
+    op.alter_column('{{ change.table }}', '{{ change.column.name }}',
+        existing_type=sa.{{ change.old_column.type.__class__.__name__ }}(),
+        nullable={{ change.changes.nullable.from }})
+    {%- endif %}
+    
+    {% if 'type' in change.changes %}
+    # Revert type change
+    op.alter_column('{{ change.table }}', '{{ change.column.name }}',
+        type_=sa.{{ change.changes.type.from.__class__.__name__ }}())
+    {%- endif %}
+    {%- endfor %} 

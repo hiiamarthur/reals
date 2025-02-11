@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-BlackItalic.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-BlackItalic.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-BlackItalic.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-BlackItalic.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-BlackItalic.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-BlackItalic.svg?cache=2024-10-29-15-49-36#Gelion-BlackItalic') format('svg');
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-Bold.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-Bold.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-Bold.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-Bold.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-Bold.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-Bold.svg?cache=2024-10-29-15-49-36#Gelion-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-BoldItalic.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-BoldItalic.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-BoldItalic.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-BoldItalic.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-BoldItalic.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-BoldItalic.svg?cache=2024-10-29-15-49-36#Gelion-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-SemiBold.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-SemiBold.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-SemiBold.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-SemiBold.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-SemiBold.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-SemiBold.svg?cache=2024-10-29-15-49-36#Gelion-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-SemiBoldItalic.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-SemiBoldItalic.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-SemiBoldItalic.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-SemiBoldItalic.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-SemiBoldItalic.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-SemiBoldItalic.svg?cache=2024-10-29-15-49-36#Gelion-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-Medium.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-Medium.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-Medium.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-Medium.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-Medium.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-Medium.svg?cache=2024-10-29-15-49-36#Gelion-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-MediumItalic.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-MediumItalic.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-MediumItalic.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-MediumItalic.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-MediumItalic.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-MediumItalic.svg?cache=2024-10-29-15-49-36#Gelion-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-Regular.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-Regular.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-Regular.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-Regular.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-Regular.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-Regular.svg?cache=2024-10-29-15-49-36#Gelion-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-RegularItalic.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-RegularItalic.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-RegularItalic.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-RegularItalic.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-RegularItalic.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-RegularItalic.svg?cache=2024-10-29-15-49-36#Gelion-RegularItalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-Light.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-Light.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-Light.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-Light.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-Light.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-Light.svg?cache=2024-10-29-15-49-36#Gelion-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-LightItalic.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-LightItalic.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-LightItalic.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-LightItalic.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-LightItalic.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-LightItalic.svg?cache=2024-10-29-15-49-36#Gelion-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-Thin.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-Thin.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-Thin.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-Thin.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-Thin.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-Thin.svg?cache=2024-10-29-15-49-36#Gelion-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gelion';
+  src: url('/fonts/Gelion-ThinItalic.eot?cache=2024-10-29-15-49-36');
+  src: url('/fonts/Gelion-ThinItalic.eot?cache=2024-10-29-15-49-36#iefix') format('embedded-opentype'),
+      url('/fonts/Gelion-ThinItalic.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('/fonts/Gelion-ThinItalic.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('/fonts/Gelion-ThinItalic.ttf?cache=2024-10-29-15-49-36') format('truetype'),
+      url('/fonts/Gelion-ThinItalic.svg?cache=2024-10-29-15-49-36#Gelion-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/fonts/RobotoMono-Regular.ttf?cache=2024-10-29-15-49-36') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+* 'wght' (range from 300.0 to 900.0)
+*/
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Variable.woff2?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff2'),
+      url('../fonts/Satoshi-Variable.woff?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('woff'),
+      url('../fonts/Satoshi-Variable.ttf?cache=2024-10-29-15-49-36?cache=2024-10-29-15-49-36') format('truetype');
+      font-weight: 300 900;
+      font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-VariableItalic.woff2?cache=2024-10-29-15-49-36') format('woff2'),
+      url('../fonts/Satoshi-VariableItalic.woff?cache=2024-10-29-15-49-36') format('woff'),
+      url('../fonts/Satoshi-VariableItalic.ttf?cache=2024-10-29-15-49-36') format('truetype');
+      font-weight: 300 900;
+      font-style: italic;
+}

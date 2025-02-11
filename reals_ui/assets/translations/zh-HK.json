@@ -1,0 +1,36 @@
+{
+  "dateType": {
+    "outdoor": "戶外",
+    "indoor": "室內",
+    "adventure": "冒險",
+    "cultural": "文化",
+    "relaxation": "放鬆",
+    "exhibition": "展覽",
+    "music": "音樂",
+    "creative": "創意",
+    "entertainment": "娛樂",
+    "sport": "運動",
+    "nightlife": "夜生活",
+    "nature": "自然",
+    "shopping": "購物"
+  },
+  "cuisineType": {
+    "chinese": "中餐",
+    "japanese": "日本料理",
+    "korean": "韓國料理",
+    "malaysian": "馬來西亞料理",
+    "taiwanese": "台灣料理",
+    "thai": "泰國料理",
+    "vietnamese": "越南料理",
+    "italian": "義大利料理",
+    "spanish": "西班牙料理",
+    "peruvian": "秘魯料理",
+    "fastFood": "速食",
+    "vegan": "素食",
+    "indian": "印度料理",
+    "mexican": "墨西哥料理",
+    "others": "其他",
+    "buffet": "自助餐",
+    "hotpot": "火鍋"
+  }
+}
